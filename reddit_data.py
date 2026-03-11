@@ -20,11 +20,11 @@ import logging.handlers
 import traceback
 
 # Input file path (ZST files)
-input_file = r"/Users/maitreya/Documents/NEU/CS 5170 - AI for HCI/Code/subreddits"
+input_file = r"Code/subreddits"
 
 # put the name or path to the output file. The file extension from below will be added automatically. If the input file is a folder, the output will be treated as a folder as well
 # Output file path (extension added automatically)
-output_file = r"/Users/maitreya/Documents/NEU/CS 5170 - AI for HCI/Code/SkillBridge/reddit_analysis_gpt/"
+output_file = r"reddit_analysis_gpt/"
 
 # output format ("txt" creates JSONL, "csv" creates CSV, "zst" creates ZST)
 output_format = "txt"
