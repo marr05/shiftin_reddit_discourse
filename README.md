@@ -38,7 +38,8 @@ Key data artifacts:
 ```
 
 1. Filter raw Reddit ZST dumps with `reddit_data.py`.
-2. Preprocess and label with `preprocess.py`.
-3. Run RQ1 statistical analyses with `rq1_analysis.py`.
+2. Preprocess and label with `preprocess.py`. -> Processed parquet files shared separately.
+3. Run RQ1 statistical analyses with `rq1_analysis.py`. -> Done
 4. Generate embeddings and fit topic models with `rq2_bertopic.py`.
-5. (Optional) Tune hyperparameters with `sweep.py`, then re-run with the best config.
+5. Tune hyperparameters with `sweep.py`, then re-run with the best config. -> Already done. 
+6. configs/full_run.yaml populated with the best analyzed parameters
