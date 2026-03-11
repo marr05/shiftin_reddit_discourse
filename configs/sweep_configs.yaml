@@ -1,0 +1,17 @@
+# configs/sweep_configs.yaml
+# Parameter grid for systematic BERTopic tuning
+# Used by sweep.py -- requires saved embeddings (run rq2_bertopic.py --embed-only first)
+
+# Each combo of these gets a separate MLflow run
+sweep:
+  hdbscan:
+    min_cluster_size: [30, 50, 75, 100, 150]
+  umap:
+    n_neighbors: [10, 15, 25]
+    n_components: [5, 10]
+
+# Fixed params during sweep (inherited from default.yaml for anything not listed)
+# To override base config values during sweep:
+fixed_overrides:
+  data:
+    sample: 100000          # sweep on sample for speed; full run uses null
