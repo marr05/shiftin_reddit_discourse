@@ -36,9 +36,6 @@ Key data artifacts:
 ## Typical Workflow
 
 ```
-reddit_data.py  →  preprocess.py  →  rq1_analysis.py
-                                  →  rq2_bertopic.py  →  sweep.py
-```
 
 1. Filter raw Reddit ZST dumps with `reddit_data.py`.
 2. Preprocess and label with `preprocess.py`.
